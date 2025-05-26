@@ -139,7 +139,7 @@ class PPOExpConfig(BasePPOExpConfig):
     # data related settings
     prompt_data: ListConfig = ListConfig(
         [
-            "train data",
+            "rl_train.json",
         ]
     )
     eval_prompt_data: ListConfig = ListConfig(
