@@ -4,7 +4,7 @@ CUDA_VISIBLE_DEVICES=7,6,5,4,3,2,1,0 torchrun --nproc_per_node=8 --master_port=2
         --output_dir /output_path \
         --model_max_length 16384 \
         --use_flash_attn True \
-        --data_path  /data_path \
+        --data_path  /cold_start.json \
         --low_rank_training False \
         --num_train_epochs 2  \
         --per_device_train_batch_size 1     \
