@@ -45,3 +45,11 @@ Modify the file `/reinforcement learning/orz/ppo/actors.py`:
 cd reinforcement learning
 ./run_ppo_gen.sh
 ```
+
+# Evaluate
+
+## $ACC_{jud}$
+
+1. `cd eval`
+2. For the model you have trained, run `python train_gen_pref.py`; for the open-source models, run `python notrain_gen_pref.py`.
+3. `python eval_preference.py`
