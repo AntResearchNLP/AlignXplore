@@ -1,15 +1,17 @@
 <div align="center">
   <h1 style="font-size: 40px;">AlignXplore</h1>
   <p>Extended Inductive Reasoning for Personalized Preference Inference from Behavioral Signals</p>
+
+  [![arXiv](https://img.shields.io/badge/Paper-arXiv-red.svg)](https://arxiv.org/abs/2505.18071)
+  [![🤗 HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Data-yellow)](https://huggingface.co/datasets/JinaLeejnl/AlignXplore)
+  [![🤗 HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Model-yellow)](https://huggingface.co/JinaLeejnl/AlignXplore-7B-Streaming)
+
 </div>
 
-# Links
-
-- 📜 [Paper](https://arxiv.org/abs/2505.18071v2)
-- 🤗 [Data](https://huggingface.co/datasets/JinaLeejnl/AlignXplore)
-  - base setting: cold_start.json, rl_train.json
-  - streaming setting: streaming_cold_start.json, streaming_rl_train.json
-  - eval: rl_test.json
+<strong>AlignXplore</strong> is a deep user understanding framework designed to infer rich and human-readable preference summaries from complex—even noisy—behavioral signals.
+- <strong>Streaming</strong>: Built for streaming scenarios. As new signals arrive, AlignXplore incrementally updates existing preference summaries through lightweight reasoning—eliminating the need to rerun costly end-to-end inference from scratch.
+- <strong>Flexible</strong>: Supports heterogeneous input formats out of the box, including preference pairs (e.g., post–chosen–rejected comparisons) and free-form text signals such as user-generated content.
+- <strong>Robust</strong>: Delivers stable and reliable performance under noisy inputs and remains resilient to abrupt or long-term shifts in user preferences.
 
 # Requirements
 
@@ -67,3 +69,25 @@ cd reinforcement learning
 1. `cd eval`
 2. For the model you have trained, run `python train_gen_pref.py`; for the open-source models, run `python notrain_gen_pref.py`.
 3. `python eval_preference.py`
+
+
+# Links
+
+- 📜 [Paper](https://arxiv.org/abs/2505.18071v2)
+- 🤗 [Data](https://huggingface.co/datasets/JinaLeejnl/AlignXplore)
+  - base setting: cold_start.json, rl_train.json
+  - streaming setting: streaming_cold_start.json, streaming_rl_train.json
+  - eval: rl_test.json
+
+# Citation
+```
+@misc{li2025extendedinductivereasoningpersonalized,
+      title={Extended Inductive Reasoning for Personalized Preference Inference from Behavioral Signals}, 
+      author={Jia-Nan Li and Jian Guan and Wei Wu and Rui Yan},
+      year={2025},
+      eprint={2505.18071},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.18071}, 
+}
+```
