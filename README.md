@@ -13,7 +13,9 @@
 - <strong>Flexible</strong>: Supports heterogeneous input formats out of the box, including preference pairs (e.g., post–chosen–rejected comparisons) and free-form text signals such as user-generated content.
 - <strong>Robust</strong>: Delivers stable and reliable performance under noisy inputs and remains resilient to abrupt or long-term shifts in user preferences.
 
-# Requirements
+
+# :gear: Building Your User Model with AlignXplore
+## Requirements
 
 To install requirements:
 
@@ -21,16 +23,16 @@ To install requirements:
 pip install -r requirements.txt
 ```
 
-# Training
+## Training
 
-## Cold-start training
+### Cold-start training
 
 ```train
 cd cold-start training
 ./sft.sh # Set `data_path` to `cold_start.json` for the base setting, and `streaming_cold_start.json` for the streaming setting.
 ```
 
-## Reinforcement learning
+### Reinforcement learning
 
 The code is developed based on [Open-Reasoner-Zero](https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero).
 
@@ -62,15 +64,15 @@ cd reinforcement learning
 ./run_ppo_streaming.sh # with `prompt_data` set to `streaming_rl_train.json`
 ```
 
-# Evaluate
+## Evaluation
 
-## $ACC_{jud}$
+### $ACC_{jud}$
 
 1. `cd eval`
 2. For the model you have trained, run `python train_gen_pref.py`; for the open-source models, run `python notrain_gen_pref.py`.
 3. `python eval_preference.py`
 
-
+<!--
 # Links
 
 - 📜 [Paper](https://arxiv.org/abs/2505.18071v2)
@@ -78,8 +80,9 @@ cd reinforcement learning
   - base setting: cold_start.json, rl_train.json
   - streaming setting: streaming_cold_start.json, streaming_rl_train.json
   - eval: rl_test.json
+-->
 
-# Citation
+# 📄 Citation
 ```
 @misc{li2025extendedinductivereasoningpersonalized,
       title={Extended Inductive Reasoning for Personalized Preference Inference from Behavioral Signals}, 
