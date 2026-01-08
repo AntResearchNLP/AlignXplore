@@ -14,7 +14,7 @@
 - <strong>Robust</strong>: Delivers stable and reliable performance under noisy inputs and remains resilient to abrupt or long-term shifts in user preferences.
 
 
-# :gear: Building Your User Model with AlignXplore
+# :rocket: Quick Start
 ## Requirements
 
 To install requirements:
