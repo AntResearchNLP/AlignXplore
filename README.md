@@ -18,7 +18,7 @@
 Our model performs human-like inductive reasoning for preference inference by progressively refining its preference hypotheses through iterative testing and validation. These inferred preferences can then guide diverse downstream personalization tasks.
 
 <p align="center">
-  <img src="task.png" width="80%" alt="task"/>
+  <img src="task.png" width="99%" alt="task"/>
 </p>
 <p align="center">
   <em>Figure: Preference inference task overview.</em>
@@ -29,7 +29,7 @@ Our model performs human-like inductive reasoning for preference inference by pr
 AlignXplore combines cold-start training using synthetic data from teacher models with reinforcement learning optimization to enhance the model’s reasoning capabilities.
 
 <p align="center">
-  <img src="training.png" width="80%" alt="training"/>
+  <img src="training.png" width="99%" alt="training"/>
 </p>
 <p align="center">
   <em>Figure: Two-stage training process of AlignXplore.</em>
