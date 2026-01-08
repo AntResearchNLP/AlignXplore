@@ -13,6 +13,27 @@
 - <strong>Flexible</strong>: Supports heterogeneous input formats out of the box, including preference pairs (e.g., post–chosen–rejected comparisons) and free-form text signals such as user-generated content.
 - <strong>Robust</strong>: Delivers stable and reliable performance under noisy inputs and remains resilient to abrupt or long-term shifts in user preferences.
 
+# Task Overview
+
+Our model performs human-like inductive reasoning for preference inference by progressively refining its preference hypotheses through iterative testing and validation. These inferred preferences can then guide diverse downstream personalization tasks.
+
+<p align="center">
+  <img src="task.png" width="80%" alt="task"/>
+</p>
+<p align="center">
+  <em>Figure: Preference inference task overview.</em>
+</p>
+
+# Training Process
+
+AlignXplore combines cold-start training using synthetic data from teacher models with reinforcement learning optimization to enhance the model’s reasoning capabilities.
+
+<p align="center">
+  <img src="training.png" width="80%" alt="training"/>
+</p>
+<p align="center">
+  <em>Figure: Two-stage training process of AlignXplore.</em>
+</p>
 
 # :rocket: Quick Start
 ## Requirements
